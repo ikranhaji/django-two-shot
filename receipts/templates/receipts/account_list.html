@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <main>
+            <table>
+                <thread>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Number of Receipts</th>
+                    </tr>
+                </thread>
+                <tbody>
+                {% for account in accounts %}
+                    <tr>
+                        <td>{{account.name}}</td>
+                        <td>{{account.number}}
+                        <td>{{account.receipt|length}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <main>
+            <table>
+                <thread>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number of Receipts</th>
+                    </tr>
+                </thread>
+                <tbody>
+                {% for category in categories %}
+                    <tr>
+                        <td>{{category.name}}</td>
+                        <td>{{category.receipt|length}}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </main>
+    </body>
+</html>
