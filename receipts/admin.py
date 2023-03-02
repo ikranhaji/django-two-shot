@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import Receipt, Account, ExpenseCategory
 
+
 @admin.register(ExpenseCategory)
 class ExpenseCateogyAdmin(admin.ModelAdmin):
     list_display = (
@@ -16,6 +17,7 @@ class AccountAdmin(admin.ModelAdmin):
         "number",
         "owner",
     )
+
 
 @admin.register(Receipt)
 class ReceiptAdmin(admin.ModelAdmin):
