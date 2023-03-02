@@ -26,4 +26,7 @@ class ReceiptAdmin(admin.ModelAdmin):
         "total",
         "tax",
         "date",
+        "purchaser",
+        "category",
+        "account",
     )
